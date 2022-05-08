@@ -1,0 +1,15 @@
+int pinFotoresistencia = 0;
+
+int valorFotoresistencia = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  valorFotoresistencia = analogRead(pinFotoresistencia);
+  Serial.println(valorFotoresistencia);
+  delay(100);
+}
